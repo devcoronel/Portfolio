@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% block content %}
+	<div style="background-image: radial-gradient(farthest-corner at 45px 45px , #0c1725 0%, #26304c 100%);">
+		<div class="container-fluid pb-5" style="padding-top: 7rem;">
+			<div class="container bg-light rounded pt-2">
+				<div class="p-3">
+					<h1 class="fw-bold">Contact Me</h1>
+					<p class="fs-5 text-start">Thanks for watching my portfolio. If you would like contact me, you can send a mail below. See you!</p>
+					
+					<form id="form_contactme">
+
+						<div class="mb-3">
+							<label for="exampleFormControlInput1" class="form-label fw-bold fs-5">Email address</label>
+							<input type="email" class="form-control" placeholder="name@example.com" name="email">
+						</div>
+	
+						<div class="mb-3">
+							<label for="exampleFormControlInput1" class="form-label fw-bold fs-5">Subject</label>
+							<input type="text" class="form-control" name="subject">
+						</div>
+	
+						<div class="mb-3">
+							<label for="exampleFormControlTextarea1" class="form-label fw-bold fs-5">Email Body</label>
+							<textarea class="form-control" rows="4" name="body"></textarea>
+						</div>
+	
+						<button type="submit" class="btn btn-primary">Submit</button>
+
+					</form>
+	
+					<div id="msg">	
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="../static/js/contact_me.js"></script>		
+{% endblock %}

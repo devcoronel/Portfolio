@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from starlette.responses import JSONResponse
-from starlette.exceptions import HTTPException 
+from starlette.exceptions import HTTPException
 
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 
@@ -30,7 +30,7 @@ async def http_exception_handler(request, exc):
 @app.get("/", response_class=HTMLResponse)
 @limiter.limit("4/second")
 async def root(request: Request):
-    return templates.TemplateResponse("aboutme.html", {"request": request}) 
+    return templates.TemplateResponse("aboutme.html", {"request": request})
 
 @app.get("/studies", response_class=HTMLResponse)
 @limiter.limit("4/second")

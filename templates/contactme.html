@@ -7,29 +7,52 @@
 					<h1 class="fw-bold">Contact Me</h1>
 					<p class="fs-5 text-start">Thanks for watching my portfolio. If you would like contact me, you can send a mail below. See you!</p>
 					
-					<form id="form_contactme">
+					<form id="form_contactme" class="needs-validation" novalidate>
 
-						<div class="mb-3">
-							<label for="exampleFormControlInput1" class="form-label fw-bold fs-5">Email address</label>
-							<input type="email" class="form-control" placeholder="name@example.com" name="email">
+						<div class="mb-3 ">
+							<div class="row">
+								<label for="exampleFormControlInput1" class="form-label fw-bold fs-5">Email address</label>
+							</div>
+							<div class="row ms-0 me-0">
+								<input type="email" class="form-control" id="id-email" placeholder="name@example.com" name="email">
+							</div>
+							<div class="row">
+								<p id="id-p-email"></p>
+							</div>
 						</div>
 	
 						<div class="mb-3">
-							<label for="exampleFormControlInput1" class="form-label fw-bold fs-5">Subject</label>
-							<input type="text" class="form-control" name="subject">
+							<div class="row">
+								<label for="exampleFormControlInput1" class="form-label fw-bold fs-5">Subject</label>
+							</div>
+							<div class="row ms-0 me-0">
+								<input type="text" class="form-control" id="id-subject" name="subject">
+							</div>
+							<div class="row">
+								<p id="id-p-subject"></p>
+							</div>
 						</div>
 	
 						<div class="mb-3">
-							<label for="exampleFormControlTextarea1" class="form-label fw-bold fs-5">Email Body</label>
-							<textarea class="form-control" rows="4" name="body"></textarea>
+							<div class="row">
+								<label for="exampleFormControlTextarea1" class="form-label fw-bold fs-5">Email Body</label>
+							</div>
+							<div class="row ms-0 me-0">
+								<textarea class="form-control" id="id-body" rows="4" name="body"></textarea>
+							</div>
+							<div class="row">
+								<p id="id-p-body"></p>
+							</div>
 						</div>
-	
-						<button type="submit" class="btn btn-primary">Submit</button>
+						
+						<div id="msg">	
+						</div>
+
+						<button type="submit" class="btn btn-primary">Send</button>
 
 					</form>
-	
-					<div id="msg">	
-					</div>
+					
+
 				</div>
 
 			</div>
